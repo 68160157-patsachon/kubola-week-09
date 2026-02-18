@@ -1,19 +1,15 @@
-class Person {
-    int id;
-    String firstname;
-    String lastname;
-    int age;
-    static int count = 0;
+public class Showinfo {
+    public static void main(String[] args) {
+        Person p1;
+        Person p2;
+        Person p3;
 
-    public Person(String fn, String ln, int a) {
-        firstname = fn;
-        lastname = ln;
-        age = a;
-        count++;
-        id = count;
-    }
+        p1 = new Person("nid", "kubola", 25);
+        p2 = new Person("john", "peterson", 37);
+        p3 = new Person("bob", "smith", 18);
 
-    public void show() {
-        System.out.println("Id : " + id + " Name : " + firstname + " " + lastname + " Age : " + age);
+        p1.show();
+        p2.show();
+        p3.show();
     }
 }
